@@ -1,0 +1,15 @@
+To get Jupyter on an andoid device:
+First of all, check to see if your device has enough storage, 3 GB.
+Next, install Andronix from Google Play Store(pydoid3 is not available for the U.S.)
+Open Andronix, download Termux from there(Termux in Google Play is depreciated and won't work).
+When you have F-droid version of Termux installed, go back to Andronix and coose a distro.
+I have found that Debian works the best.
+After this is installed, type code: pkg install python3.
+This will install pip, as well as a lot of other packages.
+Type code: python -m pip install --upgrade pip.
+Next, type code: python -m pip install jupyter. This will install jupyter notetbook.
+As you will be in root, type code: jupyter notebook --allow-root.
+When jupyter boots up, it will have two http addresses at the end,
+you can use either one, but every time you start jupyter notebook, it will 
+have a different token number.
+Type this http address into your browser and now you're in jupyter.
